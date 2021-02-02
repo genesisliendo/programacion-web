@@ -103,6 +103,9 @@
               <div class="card-body">
                 <h2 class="text-center pb-2">Esquema de Base de Datos</h2>
                 <p class="card-text">Diseño de la base de datos para su implementacion en un servidor o aplicacccion</p>
+                <div class="text-center">
+                  <button type="button" class="btn btn btn-outline-primary" data-toggle="modal" data-target="#form-client">Solicitar servicio</button>
+                </div>
               </div>
             </div>
           </div>
@@ -112,6 +115,9 @@
               <div class="card-body">
                 <h2 class="text-center pb-2">Practica de Taekwondo</h2>
                 <p class="card-text">Entrenamiento para aprender lo basico del Taekwondo</p>
+                <div class="text-center">
+                  <button type="button" class="btn btn btn-outline-primary" data-toggle="modal" data-target="#form-client">Solicitar servicio</button>
+                </div>
               </div>
             </div>
           </div>
@@ -135,6 +141,53 @@
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="form-client" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Solicitar Servicios</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row pb-4">
+                <div class="col">
+                  <label for="exampleInputEmail1">Nombre</label>
+                  <input type="text" class="form-control" id="nameClient">
+                </div>
+                <div class="col">
+                  <label for="exampleInputEmail1">Apellido</label>
+                  <input type="text" class="form-control" id="lastNameClient">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col pb-2">
+                    <label for="exampleInputEmail1">Dirección de Correo Electronico</label>
+                    <input type="email" class="form-control" id="emailClient" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="form-row pb-4">
+                <div class="col">
+                  <label for="inputState">Servicio</label>
+                  <select id="typeService" class="form-control">
+                    <option selected>Elige una opción</option>
+                    <option>Esquema de Base de Datos</option>
+                    <option>Practica de Taekwondo</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
