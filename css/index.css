@@ -42,3 +42,17 @@
     width: 100%;
     height: 300px;
 }
+
+#containerbg {
+    background-color: rgb(175, 172, 172);
+    color: white;
+}
+
+.card {
+    color: black;
+}
+
+hr {
+    color: white;
+    background-color: white;
+}
