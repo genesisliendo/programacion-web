@@ -43,7 +43,17 @@
     height: 300px;
 }
 
-#containerbg {
+#containerbg-curriculum {
+    background-color: rgb(175, 172, 172);
+    color: white;
+}
+
+#containerbg-servicios {
+    background-color: rgb(175, 172, 172);
+    color: white;
+}
+
+#containerbg-contacto {
     background-color: rgb(175, 172, 172);
     color: white;
 }
